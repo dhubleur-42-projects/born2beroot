@@ -1,0 +1,62 @@
+Show Partitions:
+lsblk
+
+Go to root:
+su -
+
+edit hostname:
+sudo hostnamectl set-hostname NAME
+
+Add user to group:
+usermod -aG GROUP USER_NAME
+Check users in group:
+getent group GROUP
+
+Add group:
+sudo addgroup GROUP_NAME
+
+Create user:
+sudo adduser USER_NAME
+
+Remove user:
+sudo userdel USER_NAME
+
+sudo config:
+sudo vi /etc/sudoers.d/config
+
+sudo logs:
+/var/log/sudo.log
+
+is service installed:
+dpkg -l | grep SERVICE
+
+check ssh status:
+sudo service ssh status
+
+ssh config:
+sudo vi /etc/ssh/sshd_config
+
+UFW add port
+sudo ufw allow PORT
+
+check UFW status:
+sudo ufw status
+
+passwords age settings:
+sudo vi /etc/login.defs (160)
+password strength settings:
+sudo vi /etc/pam.d/common-password
+
+Setup Cron job:
+sudo vi /etc/crontab
+
+MariaDB:
+mariadb -u dhubleur -p
+SHOW DATABSES;
+
+Config Wordpress:
+sudo vi /var/www/html/wp-config.php
+
+Config FTP:
+sudo vi /etc/vsftpd.conf
+sudo vi /etc/vsftpd.userlist
